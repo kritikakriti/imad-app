@@ -6,7 +6,7 @@ element.innerHTML='Hasura-web-app';
 
 //move the image
 var madi=document.getElementById('madi');
-img.onClick = function(){
-    img.style.marginLeft='100px';
+ madi.onClick = function(){
+    madi.style.marginLeft='100px';
 };
 
