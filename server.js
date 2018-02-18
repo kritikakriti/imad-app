@@ -19,7 +19,8 @@ var articles = {
     <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
     </p>`
               },
-  ' article-two' : {title:'Article Two Kritika',
+  ' article-two' : {
+    title:'Article Two Kritika',
     heading:'Article Two' ,
     date : 'Feb 18, 2018' ,
     content:`<p>
@@ -31,7 +32,7 @@ var articles = {
     <p>This is the content of my Second article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
     </p>`},
    'article-three' : {
-       title:'Article Three Kritika',
+    title:'Article Three Kritika',
     heading:'Artice Three' ,
     date : 'Feb 18, 2018' ,
     content:`<p>
