@@ -5,8 +5,8 @@ var element=document.getElementById('main-text');
 element.innerHTML='Hasura-web-app';
 
 //move the image
-var madi=document.getElementById('madi');
- madi.onClick = function(){
+var img=document.getElementById('madi');
+ img.onClick = function(){
     img.style.marginLeft='100px';
 };
 
