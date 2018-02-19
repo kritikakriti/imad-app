@@ -7,7 +7,12 @@ element.innerHTML = 'Hasura-web-app';
 
 //move the image
 var img = document.getElementById('madi');
+var marginLeft = 0;
+function moveRight () {
+    marginLeft = marginLeft+10;
+    img.style.marginLeft = marginLeft + 'px';
+}
  img.onClick = function () {
-    img.style.marginLeft = '100px';
+     var interval = setInterval(moveRight, 100);
 };
 
