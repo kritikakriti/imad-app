@@ -1,18 +1,13 @@
-console.log('Loaded!');
+//Counter code
+var button = document.getElementById("counter");
+button.onclick = function () {
+    
+    //Make a request to the counter end point
 
-//Change the text of the main-text div
-var element=document.getElementById('main-text');
-element.innerHTML = 'Hasura-web-app';
-
-
-//move the image
-var img = document.getElementById('madi');
-var marginLeft = 0;
-function moveRight () {
-    marginLeft = marginLeft + 5;
-    img.style.marginLeft = marginLeft + 'px';
-}
- img.onClick = function () {
-     var interval = setInterval(moveRight, 50);
+    //capture a response and store it in a variable
+    
+    //Render the variable in the correect span
+    counter = counter + 1;
+    var span = document.getElementById("count");
+    span.innerHTML = counter.toString();
 };
-
