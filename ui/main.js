@@ -1,14 +1,25 @@
 //Counter code
 var button = document.getElementById('counter');
-var counter = 0;
+
+
 button.onclick = function () {
     
-    //Make a request to the counter end point
-
-    //capture a response and store it in a variable
+    //Create a request object
+    var request = new XMLHttpRequest();
     
-    //Render the variable in the correect span
-    counter = counter + 1;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
+    //capture a response and store it in a variable
+    request.onreadystatechange = function () {
+        if(request.readyState === XMLHttpRequest.DONE){
+            //Take some action
+            if (request.status === 200) {
+                var counter = request.response.Text;
+                var span = document.getElementById('count');
+                 span.innerHTML = counter.toString();
+            }
+        }
+        //Not done yet
+    };
+    //Make a request
+    request.open('GET', 'http://kritikakriti145.imad.hasura-app.io/counter', true);
+    request.send(null);
 };
