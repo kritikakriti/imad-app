@@ -24,10 +24,11 @@ button.onclick = function () {
     request.send(null);
 };
 
+
+var submit = document.getElementById('submit_btn');
 //Submit name
 var nameInput = document.getElementById('name');
 var name = nameInput.value;
-var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
 
      //Create a request object
@@ -51,11 +52,9 @@ submit.onclick = function () {
  }
         }
 };
-//Submit name
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+
 //Make a request
-    request.open('GET', 'http://kritikakriti145.imad.hasura-app.io/submit-name?name=' + name, true);
-    request.send(null);
+request.open('GET', 'http://kritikakriti145.imad.hasura-app.io/submit-name?name=' + name, true);
+request.send(null);
 
 };
